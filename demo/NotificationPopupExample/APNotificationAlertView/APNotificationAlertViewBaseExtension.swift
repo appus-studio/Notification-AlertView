@@ -1,17 +1,17 @@
 //
-//  NotificationAlertViewBaseExtension.swift
-//  NotificationPopupExample
+//  APNotificationAlertViewBaseExtension.swift
+//  AppusNotificationPopupExample
 //
 //  Created by Andrey Pervushin on 27.10.15.
 //  Copyright © 2015 Andrey Pervushin. All rights reserved.
 //
 import UIKit
 
-extension NotificationAlertView {
+extension APNotificationAlertView {
     
     //Simple popup with text. Use hideAfterDelay property or outer action to hide
     
-    static func popupWithText(text:String) -> NotificationAlertView{
+    static func popupWithText(text:String) -> APNotificationAlertView{
         
         //-- Elements
         
@@ -37,16 +37,16 @@ extension NotificationAlertView {
         
         view.addSubview(label)
         
-        NotificationAlertView.addMarginConstraints(view, childView: label, margins: [0,0,0,0])
+        APNotificationAlertView.addMarginConstraints(view, childView: label, margins: [0,0,0,0])
         
-        return NotificationAlertView.popupWithView(view)
+        return APNotificationAlertView.popupWithView(view)
         
     }
     
     //Popup with text and Yes/No options. Use customCompletionHandler to get
     //presed option index (Yes:0 No:1)
     @available(iOS 9, *)
-    static func popupWithQuestion(text:String) -> NotificationAlertView{
+    static func popupWithQuestion(text:String) -> APNotificationAlertView{
         
         //-- Elements
         
@@ -127,13 +127,13 @@ extension NotificationAlertView {
         
         view.addSubview(panel)
         
-        NotificationAlertView.addLeftIconConstraints(view, childView: icon, values: [5,30,30])
+        APNotificationAlertView.addLeftIconConstraints(view, childView: icon, values: [5,30,30])
         
-        NotificationAlertView.addMarginConstraints(view, childView: label, margins: [40,20,-80,0])
+        APNotificationAlertView.addMarginConstraints(view, childView: label, margins: [40,20,-80,0])
         
-        NotificationAlertView.addHorizontalSnapConstraints(view, childView: panel, margins: [20,0], layoutAttribute: .Right, width: 80)
+        APNotificationAlertView.addHorizontalSnapConstraints(view, childView: panel, margins: [20,0], layoutAttribute: .Right, width: 80)
         
-        let tempPopup = NotificationAlertView.popupWithView(view)
+        let tempPopup = APNotificationAlertView.popupWithView(view)
         
         //-- Event Handlers
         
@@ -148,7 +148,7 @@ extension NotificationAlertView {
     //Popup with text and warious number of options. Use customCompletionHandler 
     //to get presed option index
     @available(iOS 9, *)
-    static func popupDialogWithText(text:String, options:[String]) -> NotificationAlertView{
+    static func popupDialogWithText(text:String, options:[String]) -> APNotificationAlertView{
         
         //-- Elements
         
@@ -206,12 +206,12 @@ extension NotificationAlertView {
         
         view.addSubview(label)
         
-        NotificationAlertView.addVerticalSnapConstraints(view, childView: panel, layoutAttribute: .Bottom, height: 35)
+        APNotificationAlertView.addVerticalSnapConstraints(view, childView: panel, layoutAttribute: .Bottom, height: 35)
         
-        NotificationAlertView.addMarginConstraints(view, childView: label, margins: [50,20,0,-35])
+        APNotificationAlertView.addMarginConstraints(view, childView: label, margins: [50,20,0,-35])
         
         
-        let tempPopup = NotificationAlertView.popupWithView(view)
+        let tempPopup = APNotificationAlertView.popupWithView(view)
         
         //-- Event Handlers
         

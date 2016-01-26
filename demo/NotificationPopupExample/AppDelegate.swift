@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  NotificationPopupExample
+//  AppusNotificationPopupExample
 //
 //  Created by Andrey Pervushin on 27.10.15.
 //  Copyright © 2015 Andrey Pervushin. All rights reserved.

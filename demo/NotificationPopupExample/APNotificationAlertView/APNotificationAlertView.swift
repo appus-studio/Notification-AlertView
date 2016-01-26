@@ -1,6 +1,6 @@
 //
-//  NotificationAlertView.swift
-//  com.rian.swift1
+//  APNotificationAlertView.swift
+//  AppusNotificationPopupExample
 //
 //  Created by Andrey Pervushin on 16.10.15.
 //  Copyright © 2015 Andrey Pervushin. All rights reserved.
@@ -8,16 +8,16 @@
 
 import UIKit
 
-enum NotificationAlertViewPosition: Int {
+enum APNotificationAlertViewPosition: Int {
     
     case Top, Bottom, Custom
     
 }
 
-class NotificationAlertView: UIView {
+class APNotificationAlertView: UIView {
     
     
-    static var popup:NotificationAlertView?
+    static var popup:APNotificationAlertView?
     
     //May be used in custom popup extensions if you should send some response
     //based on some actions
@@ -35,7 +35,7 @@ class NotificationAlertView: UIView {
     var contentView: UIView?
     
     //Chage this to show popup from top or bottom
-    var position: NotificationAlertViewPosition!{
+    var position: APNotificationAlertViewPosition!{
         didSet{
             
             switch position! {
@@ -88,11 +88,11 @@ class NotificationAlertView: UIView {
     
     //Construct popup with any specified view. View will fit popup size however
     //be carefull with constraints specified in it
-    static func popupWithView(view:UIView?) -> NotificationAlertView{
+    static func popupWithView(view:UIView?) -> APNotificationAlertView{
         
         //-- Elements
         
-        let tempPopup = NotificationAlertView()
+        let tempPopup = APNotificationAlertView()
         
         tempPopup.contentView = view
         
@@ -166,7 +166,7 @@ class NotificationAlertView: UIView {
             
             self.addSubview(self.contentView!)
             
-            NotificationAlertView.addMarginConstraints(self, childView: self.contentView!, margins: [0,0,0,0])
+            APNotificationAlertView.addMarginConstraints(self, childView: self.contentView!, margins: [0,0,0,0])
             
         }
         
@@ -190,9 +190,9 @@ class NotificationAlertView: UIView {
             
             self.contentView!.hidden = true
             
-            NotificationAlertView.hideAnimated(false)
+            APNotificationAlertView.hideAnimated(false)
             
-            NotificationAlertView.updatePopup(self)
+            APNotificationAlertView.updatePopup(self)
             
             CATransaction.begin();
             
@@ -371,7 +371,7 @@ class NotificationAlertView: UIView {
         
     }
     
-    private static func updatePopup(popupView:NotificationAlertView){
+    private static func updatePopup(popupView:APNotificationAlertView){
         
         popup = popupView;
         

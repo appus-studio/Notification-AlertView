@@ -13,12 +13,12 @@
 		D733A2091BDFC7A400149C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D733A2081BDFC7A400149C47 /* Assets.xcassets */; };
 		D733A20C1BDFC7A400149C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D733A20A1BDFC7A400149C47 /* LaunchScreen.storyboard */; };
 		D745F6221BE2210B000A9145 /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D745F6211BE2210B000A9145 /* LabelCollectionViewCell.swift */; };
-		D7559D361BE3932D00A0C31C /* NotificationAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7559D341BE3932D00A0C31C /* NotificationAlertView.swift */; };
-		D7559D371BE3932D00A0C31C /* NotificationAlertViewBaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7559D351BE3932D00A0C31C /* NotificationAlertViewBaseExtension.swift */; };
+		D75807F71C57743100090CFE /* APNotificationAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75807F51C57743100090CFE /* APNotificationAlertView.swift */; };
+		D75807F81C57743100090CFE /* APNotificationAlertViewBaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75807F61C57743100090CFE /* APNotificationAlertViewBaseExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D733A1FE1BDFC7A400149C47 /* NotificationPopupExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationPopupExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D733A1FE1BDFC7A400149C47 /* AppusNotificationPopupExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppusNotificationPopupExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D733A2011BDFC7A400149C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D733A2031BDFC7A400149C47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D733A2061BDFC7A400149C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,8 +26,8 @@
 		D733A20B1BDFC7A400149C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D733A20D1BDFC7A400149C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D745F6211BE2210B000A9145 /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
-		D7559D341BE3932D00A0C31C /* NotificationAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationAlertView.swift; sourceTree = "<group>"; };
-		D7559D351BE3932D00A0C31C /* NotificationAlertViewBaseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationAlertViewBaseExtension.swift; sourceTree = "<group>"; };
+		D75807F51C57743100090CFE /* APNotificationAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNotificationAlertView.swift; sourceTree = "<group>"; };
+		D75807F61C57743100090CFE /* APNotificationAlertViewBaseExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNotificationAlertViewBaseExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 		D733A1FF1BDFC7A400149C47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D733A1FE1BDFC7A400149C47 /* NotificationPopupExample.app */,
+				D733A1FE1BDFC7A400149C47 /* AppusNotificationPopupExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 		D733A2001BDFC7A400149C47 /* NotificationPopupExample */ = {
 			isa = PBXGroup;
 			children = (
-				D7559D331BE3932D00A0C31C /* NotificationAlertView */,
+				D75807F41C57743100090CFE /* APNotificationAlertView */,
 				D733A2011BDFC7A400149C47 /* AppDelegate.swift */,
 				D733A2031BDFC7A400149C47 /* ViewController.swift */,
 				D733A2051BDFC7A400149C47 /* Main.storyboard */,
@@ -72,21 +72,21 @@
 			path = NotificationPopupExample;
 			sourceTree = "<group>";
 		};
-		D7559D331BE3932D00A0C31C /* NotificationAlertView */ = {
+		D75807F41C57743100090CFE /* APNotificationAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				D7559D341BE3932D00A0C31C /* NotificationAlertView.swift */,
-				D7559D351BE3932D00A0C31C /* NotificationAlertViewBaseExtension.swift */,
+				D75807F51C57743100090CFE /* APNotificationAlertView.swift */,
+				D75807F61C57743100090CFE /* APNotificationAlertViewBaseExtension.swift */,
 			);
-			path = NotificationAlertView;
+			path = APNotificationAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D733A1FD1BDFC7A400149C47 /* NotificationPopupExample */ = {
+		D733A1FD1BDFC7A400149C47 /* AppusNotificationPopupExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D733A2101BDFC7A400149C47 /* Build configuration list for PBXNativeTarget "NotificationPopupExample" */;
+			buildConfigurationList = D733A2101BDFC7A400149C47 /* Build configuration list for PBXNativeTarget "AppusNotificationPopupExample" */;
 			buildPhases = (
 				D733A1FA1BDFC7A400149C47 /* Sources */,
 				D733A1FB1BDFC7A400149C47 /* Frameworks */,
@@ -96,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = NotificationPopupExample;
+			name = AppusNotificationPopupExample;
 			productName = NotificationPopupExample;
-			productReference = D733A1FE1BDFC7A400149C47 /* NotificationPopupExample.app */;
+			productReference = D733A1FE1BDFC7A400149C47 /* AppusNotificationPopupExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D733A1F91BDFC7A400149C47 /* Build configuration list for PBXProject "NotificationPopupExample" */;
+			buildConfigurationList = D733A1F91BDFC7A400149C47 /* Build configuration list for PBXProject "AppusNotificationPopupExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -129,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D733A1FD1BDFC7A400149C47 /* NotificationPopupExample */,
+				D733A1FD1BDFC7A400149C47 /* AppusNotificationPopupExample */,
 			);
 		};
 /* End PBXProject section */
@@ -155,8 +155,8 @@
 				D733A2041BDFC7A400149C47 /* ViewController.swift in Sources */,
 				D745F6221BE2210B000A9145 /* LabelCollectionViewCell.swift in Sources */,
 				D733A2021BDFC7A400149C47 /* AppDelegate.swift in Sources */,
-				D7559D361BE3932D00A0C31C /* NotificationAlertView.swift in Sources */,
-				D7559D371BE3932D00A0C31C /* NotificationAlertViewBaseExtension.swift in Sources */,
+				D75807F81C57743100090CFE /* APNotificationAlertViewBaseExtension.swift in Sources */,
+				D75807F71C57743100090CFE /* APNotificationAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +273,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appus.NotificationPopupExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AppusNotificationPopupExample;
 			};
 			name = Debug;
 		};
@@ -285,14 +285,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appus.NotificationPopupExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AppusNotificationPopupExample;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D733A1F91BDFC7A400149C47 /* Build configuration list for PBXProject "NotificationPopupExample" */ = {
+		D733A1F91BDFC7A400149C47 /* Build configuration list for PBXProject "AppusNotificationPopupExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D733A20E1BDFC7A400149C47 /* Debug */,
@@ -301,7 +301,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D733A2101BDFC7A400149C47 /* Build configuration list for PBXNativeTarget "NotificationPopupExample" */ = {
+		D733A2101BDFC7A400149C47 /* Build configuration list for PBXNativeTarget "AppusNotificationPopupExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D733A2111BDFC7A400149C47 /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  NotificationPopupExample
+//  AppusNotificationPopupExample
 //
 //  Created by Andrey Pervushin on 27.10.15.
 //  Copyright © 2015 Andrey Pervushin. All rights reserved.
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     func showViewFromTopAction() {
         
-        let popup = NotificationAlertView.popupWithView(self.samplePopupView)
+        let popup = APNotificationAlertView.popupWithView(self.samplePopupView)
         
         popup.show()
         
@@ -42,9 +42,9 @@ class ViewController: UIViewController {
     
     func showViewFromBottomAction() {
         
-        let popup = NotificationAlertView.popupWithView(self.samplePopupView)
+        let popup = APNotificationAlertView.popupWithView(self.samplePopupView)
         
-        popup.position = NotificationAlertViewPosition.Bottom
+        popup.position = APNotificationAlertViewPosition.Bottom
         
         popup.height = 150
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     
     func showTextFromTopAction() {
         
-        let popup = NotificationAlertView.popupWithText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.")
+        let popup = APNotificationAlertView.popupWithText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.")
         
         popup.hideAfterDelay = 3
         
@@ -72,12 +72,12 @@ class ViewController: UIViewController {
         
         let buttonTitles = ["Yes", "No", "Oh No!"]
         
-        let popup = NotificationAlertView.popupDialogWithText(question, options: buttonTitles)
+        let popup = APNotificationAlertView.popupDialogWithText(question, options: buttonTitles)
         
         popup.customCompletionHandler = {
             (index: Int) -> Void in
             
-            NotificationAlertView.hideAnimated(true)
+            APNotificationAlertView.hideAnimated(true)
             
             let alert = UIAlertController(title: "Taped button", message: "at index: \(index)", preferredStyle: .Alert)
             
@@ -103,12 +103,12 @@ class ViewController: UIViewController {
     
         let question = "Lorem ipsum dolor sit amet?"
         
-        let popup = NotificationAlertView.popupWithQuestion(question)
+        let popup = APNotificationAlertView.popupWithQuestion(question)
         
         popup.customCompletionHandler = {
             (index: Int) -> Void in
             
-            NotificationAlertView.hideAnimated(true)
+            APNotificationAlertView.hideAnimated(true)
             
             print("Taped button at index: \(index)")
             
@@ -120,7 +120,7 @@ class ViewController: UIViewController {
     
     func hideAnyPopupAction() {
         
-        NotificationAlertView.hideAnimated(true)
+        APNotificationAlertView.hideAnimated(true)
         
     }
     
@@ -129,7 +129,7 @@ class ViewController: UIViewController {
     
     @IBAction func hideFromPopupAction(sender: AnyObject) {
         
-        NotificationAlertView.hideAnimated(true)
+        APNotificationAlertView.hideAnimated(true)
         
     }
     
