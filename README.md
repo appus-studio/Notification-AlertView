@@ -1,7 +1,7 @@
 APNotificationAlertView
 =====================
 
-Made by [![Appus Studio](Resource/logo.png)](http://appus.pro)
+Made by [![Appus Studio](Resource/appus.png)](https://appus.software)
 
 'APNotificationAlertView' allow you to show any view as popup notification with cube transform. Developed for easy extension and flexible integration.:point_up:
 
@@ -121,12 +121,12 @@ popup.show()
 Developed By
 ------------
 
-* Alexey Kubas, Andrey Pervushin, Appus Studio
+* Alexey Kubas, Andrey Pervushin, [Appus Studio](https://appus.software)
 
 License
 --------
 
-    Copyright 2015 Appus Studio.
+    Copyright 2015 [Appus Studio](https://appus.software).
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
