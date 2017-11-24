@@ -126,7 +126,7 @@ Developed By
 License
 --------
 
-    Copyright 2015 [Appus Studio](https://appus.software).
+    Copyright 2015 Appus Studio.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
